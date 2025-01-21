@@ -30,6 +30,7 @@
 			<br>
 			<br>
 			<img alt="MySql" src="https://img.shields.io/badge/MySQL-05122A?style=flat&logo=MySql">
+			<img alt="SQL Server" src="https://img.shields.io/badge/SQL%20Server-flat?style=flat&logo=databricks&labelColor=%23061227&color=%23061227">
 		</kbd>
 	</p>
 	<p>
@@ -38,11 +39,9 @@
 			<br>
 			<br>
 			<img alt="Git" src="https://img.shields.io/badge/Git-05122A?style=flat&logo=Git">
-			<img alt="Github Projects" src="https://img.shields.io/badge/Github%20Desktop-05122A?style=flat&logo=Github">
-			<img alt="Visual Studio Code" src="https://img.shields.io/badge/Visual%20Studio%20Code-05122A?style=flat&logo=vscodium">
-			<img alt="Docker" src="https://img.shields.io/badge/Docker-flat?style=flat&logo=docker&logoColor=white&labelColor=%23061227&color=%23061227">
-			<img alt="Leetcode" src="https://img.shields.io/badge/Leetcode-05122A?style=flat&logo=Leetcode">
+			<img alt="Github Projects" src="https://img.shields.io/badge/Github%20Projects-05122A?style=flat&logo=Github">
 			<img alt="Stack Overflow" src="https://img.shields.io/badge/StackOverflow-05122A?style=flat&logo=StackOverflow">
+			<img alt="ChatGPT" src="https://img.shields.io/badge/OpenAI-flat?style=flat&logo=openai&logoColor=white&labelColor=%23061227&color=%23061227">
 		</kbd>
 	</p>
 		<p>
@@ -50,8 +49,24 @@
 			<kbd>Software</kbd>
 			<br>
 			<br>
-			<img alt="Canva" src="https://img.shields.io/badge/Canva-05122A?style=flat&logo=Canva">
+			<img alt="Visual Studio Code" src="https://img.shields.io/badge/Visual%20Studio%20Code-05122A?style=flat&logo=vscodium">
+			<img alt="JetBrains" src="https://img.shields.io/badge/JetBrains-flat?style=flat&logo=jetbrains&labelColor=%23061227&color=%23061227">
 			<img alt="Notion" src="https://img.shields.io/badge/Notion-05122A?style=flat&logo=Notion">
+			<img alt="Canva" src="https://img.shields.io/badge/Canva-05122A?style=flat&logo=Canva">
+			<img alt="Miro" src="https://img.shields.io/badge/Miro-flat?style=flat&logo=miro&logoColor=white&labelColor=%23061227&color=%23061227">
+			<img alt="Figma" src="https://img.shields.io/badge/Figma-flat?style=flat&logo=figma&labelColor=%23061227&color=%23061227">
+		</kbd>
+	</p>
+	</p>
+		<p>
+		<kbd>
+			<kbd>Systems</kbd>
+			<br>
+			<br>
+			<img alt="GNU/Linux Server" src="https://img.shields.io/badge/GNU%2FLinux%20Server-flat?style=flat&logo=linux&logoColor=white&labelColor=%23061227&color=%23061227">
+			<img alt="Docker" src="https://img.shields.io/badge/Docker-flat?style=flat&logo=docker&logoColor=white&labelColor=%23061227&color=%23061227">
+			<img alt="VirtualBox" src="https://img.shields.io/badge/VirtualBox-flat?style=flat&logo=virtualbox&labelColor=%23061227&color=%23061227">
+			<img alt="Apache" src="https://img.shields.io/badge/Apache-flat?style=flat&logo=apache&labelColor=%23061227&color=%23061227">
 		</kbd>
 	</p>
     </p>
@@ -60,9 +75,9 @@
 <h2>Licenses & Certifications</h2>
 
 [<img align="left" height="94px" width="94px" alt="VET" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPfYGBRSEOIKZ_MNVd2z9GuNth-5P_aiSylkD1xuDQbw5eA5niJORAcph1hAuOkfcLVQl9dmPHWUibjcUN7yg_zqI5k28xQBTEE3WzFAtBet8_Ze4FI_zr6qxzvTMp9-XKIRXuk_Avd67AFoiCyOjcdgRd-3heDLLKvhJB3SchEYKYfpqQnHWPq8W_/s200/6968047e-793c-4845-ad98-2cb850c46700_removalai_preview.png"/>](https://politecnics.barcelona/formacio-professional/grau-superior-desenvolupament-aplicacions-multiplataforma/)
-**Cross-Platform Application Development** \
+**VET in Cross-Platform Application Development** \
 [**Centre d'Estudis Politècnics**](https://politecnics.barcelona/) • Completed June, 2025\
-Skills: `Java` `Kotlin` `C#` `MySQL` `MongoDB` `Docker` `Git` `GitHub Projects`
+Skills: `Java` `Kotlin` `C#` `MySQL` `SQL Server` `MongoDB` `Docker` `Git` `GitHub Projects`
 
 <br>
 <h2>Top Projects</h2>
