@@ -59,7 +59,7 @@
 
 <h2>Licenses & Certifications</h2>
 
-[<img align="left" height="94px" width="94px" alt="VET" src="https://media.licdn.com/dms/image/C560BAQHr9suxyJBXMw/company-logo_200_200/0/1635534378870/stanford_university_logo?e=1723680000&v=beta&t=LPfySBrOZL3Abme80Rn3zZ_amSM3HFU8l65TpWwBmjk"/>](https://politecnics.barcelona/formacio-professional/grau-superior-desenvolupament-aplicacions-multiplataforma/)
+[<img align="left" height="94px" width="94px" alt="VET" src=""/>](https://politecnics.barcelona/formacio-professional/grau-superior-desenvolupament-aplicacions-multiplataforma/)
 **Cross-Platform Application Development** \
 [**Centre d'Estudis Politècnics**](https://politecnics.barcelona/) • Completed June, 2025\
 Skills: `Java` `Kotlin` `C#` `MySQL` `MongoDB` `Docker` `Git` `GitHub Projects`
