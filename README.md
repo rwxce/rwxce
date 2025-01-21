@@ -59,7 +59,7 @@
 
 <h2>Licenses & Certifications</h2>
 
-[<img align="left" height="94px" width="94px" alt="VET" src="https://media.licdn.com/dms/image/v2/C560BAQHDy5iO9Q3oow/company-logo_200_200/company-logo_200_200/0/1630583657217/centre_destudis_politcnics_logo?e=1745452800&v=beta&t=7Nq9NG8GDBM1MgY2vcVQUFjZ2Wh3hyvHxh2ZpJHAIWI"/>](https://politecnics.barcelona/formacio-professional/grau-superior-desenvolupament-aplicacions-multiplataforma/)
+[<img align="left" height="94px" width="94px" alt="VET" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPfYGBRSEOIKZ_MNVd2z9GuNth-5P_aiSylkD1xuDQbw5eA5niJORAcph1hAuOkfcLVQl9dmPHWUibjcUN7yg_zqI5k28xQBTEE3WzFAtBet8_Ze4FI_zr6qxzvTMp9-XKIRXuk_Avd67AFoiCyOjcdgRd-3heDLLKvhJB3SchEYKYfpqQnHWPq8W_/s200/6968047e-793c-4845-ad98-2cb850c46700_removalai_preview.png"/>](https://politecnics.barcelona/formacio-professional/grau-superior-desenvolupament-aplicacions-multiplataforma/)
 **Cross-Platform Application Development** \
 [**Centre d'Estudis Politècnics**](https://politecnics.barcelona/) • Completed June, 2025\
 Skills: `Java` `Kotlin` `C#` `MySQL` `MongoDB` `Docker` `Git` `GitHub Projects`
