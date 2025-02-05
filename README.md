@@ -72,26 +72,7 @@
     </p>
 </div>
 
-<h2>Licenses & Certifications</h2>
-
-[<img align="left" height="94px" width="94px" alt="VET" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPfYGBRSEOIKZ_MNVd2z9GuNth-5P_aiSylkD1xuDQbw5eA5niJORAcph1hAuOkfcLVQl9dmPHWUibjcUN7yg_zqI5k28xQBTEE3WzFAtBet8_Ze4FI_zr6qxzvTMp9-XKIRXuk_Avd67AFoiCyOjcdgRd-3heDLLKvhJB3SchEYKYfpqQnHWPq8W_/s200/6968047e-793c-4845-ad98-2cb850c46700_removalai_preview.png"/>](https://politecnics.barcelona/formacio-professional/grau-superior-desenvolupament-aplicacions-multiplataforma/)\
-**VET in Cross-Platform Application Development** \
-[**Centre d'Estudis Politècnics**](https://politecnics.barcelona/) • Completed June, 2025\
-Skills: `Java` `Kotlin` `C#` `MySQL` `SQL Server` `MongoDB` `Docker` `Git` `GitHub Projects`
-
 <br>
-<h2>Top Projects</h2>
-<p>
-  <a href="https://github.com/rwxce/linux-utilities">
-  		<img width="278" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=rwxce&repo=linux-utilities&theme=dark&bg_color=0D1017&title_color=E8EDF3&hide_border=false&icon_color=E8EDF3&show_icons=false&border_radius=0" alt="rwxce-Linux-Utilities"></a>
-  <a href="https://github.com/ManetesArtistes/android-app">
-  		<img width="278" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=manetesartistes&repo=android-app&theme=dark&bg_color=0D1017&title_color=E8EDF3&hide_border=false&icon_color=E8EDF3&show_icons=false&border_radius=0" alt="ManetesArtistes-Android-App"></a>
-</p>
-
-  <!-- All projects -->
-  <p align="right">
-    <a href="https://github.com/rwxce?tab=repositories"><img alt="Static Badge" src="https://img.shields.io/badge/All%20Projects-05122A?style=flat-square"></a>
-  </p>
 
 <!-- Footer -->
 
