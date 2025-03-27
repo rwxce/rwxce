@@ -26,6 +26,14 @@
 	</p>
 	<p>
 		<kbd>
+			<kbd>Frameworks</kbd>
+			<br>
+			<br>
+			<img alt=".NET" src="https://img.shields.io/badge/.NET-flat?style=flat&logo=dotnet&logoColor=white&labelColor=23061227&color=05122A">
+		</kbd>
+	</p>
+	<p>
+		<kbd>
 			<kbd>Databases and Cloud Hosting</kbd>
 			<br>
 			<br>
