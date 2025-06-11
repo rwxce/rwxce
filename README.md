@@ -30,7 +30,7 @@
 			<br>
 			<br>
 			<img alt=".NET" src="https://img.shields.io/badge/.NET-flat?style=flat&logo=dotnet&logoColor=white&labelColor=23061227&color=05122A">
-			<img alt="Spring Boot" src="https://img.shields.io/badge/Spring_Boot-flat?style=flat&logo=springboot&logoColor=white&labelColor=23061227&color=05122A">
+			<img alt="Spring Boot" src="https://img.shields.io/badge/Spring_Boot-flat?style=flat&logo=spring&logoColor=white&labelColor=23061227&color=05122A">
 		</kbd>
 	</p>
 	<p>
