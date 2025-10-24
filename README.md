@@ -1,9 +1,5 @@
 <h1>Hi there 👋, I'm Von.</h1>
 
-<!-- Header Links -->
-
-[![Linkedin](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/dcervera99/)
-
 <!-- Short Bio -->
 <p>Welcome to my profile! </br> I am a <b>technology enthusiast</b> currently advancing my skills in <b>Cross-Platform Application Development.</b> In addition, I am also exploring <b>operating systems</b> to gain a deeper understanding of their inner workings.</p>
 
