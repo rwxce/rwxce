@@ -2,7 +2,6 @@
 
 <!-- Header Links -->
 
-[![Portfolio](https://img.shields.io/badge/-Portfolio-red?style=flat&logo=appveyor&logoColor=white)](https://bento.me/rwxce)
 [![Linkedin](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/dcervera99/)
 
 <!-- Short Bio -->
