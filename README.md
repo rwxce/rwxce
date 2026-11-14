@@ -3,5 +3,5 @@
 </a>
 
 <p align="center">
-  <a href="https://rwxce.github.io/rwxce/"><img src="./cta.svg" width="360" alt="Open the shelf: rwxce.github.io/rwxce"></a>
+  <a href="https://rwxce.github.io/rwxce/"><img src="./cta.svg" width="300" alt="Open the shelf: rwxce.github.io/rwxce"></a>
 </p>
