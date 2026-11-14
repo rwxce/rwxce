@@ -30,6 +30,14 @@
     if (input.value) apply()
   }
 
+  // Scale the fixed-size Zliding illustration to its column.
+  var arts = document.querySelectorAll('.z-art')
+  function fit(el) { el.style.setProperty('--zs', String(el.clientWidth / 600)) }
+  if (arts.length && 'ResizeObserver' in window) {
+    var ro = new ResizeObserver(function (entries) { entries.forEach(function (e) { fit(e.target) }) })
+    arts.forEach(function (el) { fit(el); ro.observe(el) })
+  }
+
   // Keep the current hash when switching language.
   document.querySelectorAll('a[hreflang][data-lang]').forEach(function (a) {
     a.addEventListener('click', function () {
