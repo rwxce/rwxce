@@ -289,6 +289,57 @@ img, svg { display: block; }
 .empty { margin: 0; padding: clamp(24px, 4vw, 48px); border-radius: 32px; background: rgba(255, 255, 255, .72); font-size: clamp(20px, 2.2vw, 28px); font-weight: 700; letter-spacing: -.02em; overflow-wrap: anywhere; }
 
 /* 004 (next) */
+/* 004 */
+.plate-ms { align-items: center; background: #f6efe2; color: #0e0f13; border: 2px solid #0e0f13; }
+.plate-ms .plate-num { background: #ff4f7b; color: #0e0f13; }
+.plate-ms .plate-kind { color: #4a4540; }
+.plate-ms .plate-desc { color: #2a2622; }
+.plate-ms .tags li { border-color: #0e0f13; }
+.plate-ms .cta { background: #0e0f13; color: #f6efe2; }
+.plate-ms .src { color: #0e0f13; }
+.ms-dot { color: #ff4f7b; }
+/* Tiles never move; only SVG parts inside them animate (Safari: no transform on rounded painted boxes). */
+.ms-art { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(10px, 1.6vw, 18px); min-width: 0; }
+.ms-tile { display: flex; flex-direction: column; align-items: center; gap: 6px; min-width: 0; padding: 12px 10px; border: 2px solid #0e0f13; border-radius: 22px; }
+.ms-t1 { background: #ffe3ea; }
+.ms-t2 { background: #e4e8ff; }
+.ms-t3 { background: #ffe9d6; }
+.ms-t4 { background: #e2f4ff; }
+.ms-tile svg { width: 100%; max-width: 190px; height: auto; overflow: visible; }
+.ms-label { display: flex; flex-direction: column; align-items: center; font-family: var(--mono); font-size: 12px; line-height: 1.35; color: #6a645c; white-space: nowrap; }
+.ms-label b { font-weight: 700; color: #0e0f13; }
+.ms-art g, .ms-art path, .ms-art circle { transform-box: fill-box; }
+.ms-breathe { transform-origin: 50% 100%; animation: ms-breathe 3.2s ease-in-out infinite; }
+.ms-blink { transform-origin: 50% 50%; animation: ms-blink 4.6s infinite; }
+.ms-d1 { animation-delay: -.9s; }
+.ms-d2 { animation-delay: -1.7s; }
+.ms-d3 { animation-delay: -2.6s; }
+.ms-wave { transform-origin: 0% 70%; }
+.plate-ms:hover .ms-wave { animation: ms-wave .9s ease-in-out infinite; }
+.ms-heart { transform-origin: 50% 100%; opacity: 0; }
+.plate-ms:hover .ms-heart { animation: ms-heart 1.8s ease-out infinite; }
+.ms-head { transform-origin: 50% 100%; animation: ms-tilt 5.4s ease-in-out infinite; }
+.ms-elbow { transform-origin: 0% 30%; animation: ms-elbow 4.2s ease-in-out infinite; }
+.ms-bulb { animation: ms-bulb 2.4s steps(1) infinite; }
+.ms-tail { transform-origin: 0% 100%; animation: ms-tail 1.6s ease-in-out infinite alternate; }
+.ms-ear { transform-origin: 70% 100%; animation: ms-ear 5s ease-in-out infinite; }
+.ms-float { animation: ms-float 3.6s ease-in-out infinite; }
+.ms-boil-a { animation: ms-boil .5s steps(1) infinite; }
+.ms-boil-b { animation: ms-boil .5s steps(1) infinite reverse; }
+.ms-trail { animation: ms-trail 1.2s linear infinite; }
+@keyframes ms-breathe { 50% { transform: scale(1.03, .97); } }
+@keyframes ms-blink { 0%, 92%, 100% { transform: scaleY(1); } 95% { transform: scaleY(.1); } }
+@keyframes ms-wave { 0%, 100% { transform: rotate(0); } 50% { transform: rotate(-28deg); } }
+@keyframes ms-heart { 0% { opacity: 0; transform: translateY(6px) scale(.6); } 25% { opacity: 1; transform: translateY(0) scale(1); } 100% { opacity: 0; transform: translateY(-14px) scale(1); } }
+@keyframes ms-tilt { 0%, 100% { transform: rotate(0); } 30% { transform: rotate(-7deg); } 60% { transform: rotate(5deg); } }
+@keyframes ms-elbow { 0%, 60%, 100% { transform: rotate(0); } 75% { transform: rotate(-24deg); } 85% { transform: rotate(-8deg); } }
+@keyframes ms-bulb { 0%, 100% { opacity: 1; } 50% { opacity: .35; } }
+@keyframes ms-tail { from { transform: rotate(-6deg); } to { transform: rotate(10deg); } }
+@keyframes ms-ear { 0%, 70%, 100% { transform: rotate(0); } 76% { transform: rotate(-16deg); } 82% { transform: rotate(4deg); } }
+@keyframes ms-float { 50% { transform: translateY(-7px); } }
+@keyframes ms-boil { 0% { opacity: 1; } 50% { opacity: 0; } }
+@keyframes ms-trail { to { stroke-dashoffset: -22; } }
+
 .plate-next { display: flex; flex-direction: column; border-radius: 32px; border: 2px dashed var(--ink); background: rgba(255, 255, 255, .4); overflow: hidden; }
 .next-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px; padding: clamp(24px, 4vw, 48px) clamp(24px, 4vw, 56px); }
 .next-title { display: flex; flex-wrap: wrap; align-items: center; gap: 20px; }
