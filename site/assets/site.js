@@ -38,6 +38,11 @@
     arts.forEach(function (el) { fit(el); ro.observe(el) })
   }
 
+  // SMIL (the ghost's hem) ignores the CSS reduced-motion rule: pause it by hand.
+  if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('.ms-art svg').forEach(function (s) { if (s.pauseAnimations) { s.pauseAnimations(); s.setCurrentTime(0) } })
+  }
+
   // Keep the current hash when switching language.
   document.querySelectorAll('a[hreflang][data-lang]').forEach(function (a) {
     a.addEventListener('click', function () {
