@@ -420,3 +420,14 @@ img, svg { display: block; }
   .ztype { width: 11ch; }
   .zs0, .zs1, .zs2, .zs3 { transform: scaleX(1); }
 }
+
+/* Two-column plates: every plate is as tall as Zliding (001, 002, 004 match its square art and padding).
+   From 1280px the text columns fit inside the square art height; below that plates keep their natural height. */
+@media (min-width: 1280px) {
+  .plate-kit, .plate-mem, .plate-ms { align-items: center; padding: clamp(28px, 4.4vw, 64px); }
+  .term-col, .mem-art, .ms-art { width: 100%; max-width: 600px; aspect-ratio: 1; justify-self: center; }
+  .mem-art { min-height: 0; }
+  .ms-art { display: flex; }
+  .ms-stage { flex: 1; align-content: center; }
+  .ms-cell svg { max-width: none; max-height: 100%; }
+}
