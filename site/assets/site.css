@@ -143,9 +143,7 @@ img, svg { display: block; }
 .kit-window { flex: 1; min-width: 0; min-height: 0; display: flex; flex-direction: column; border: 1px solid #474b57; border-radius: 20px; background: #2a2d36; box-shadow: 0 30px 60px -30px rgba(0, 0, 0, .6); overflow: hidden; }
 .kit-bar { display: flex; align-items: center; gap: 12px; padding: 12px 14px 8px 16px; }
 .kit-bar-label { flex: 1; min-width: 0; font-family: var(--mono); font-size: 12px; color: #c4c7cf; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.kit-restart { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; border: 1px solid #474b57; border-radius: 8px; background: transparent; color: #c4c7cf; cursor: pointer; }
-.kit-restart:hover { color: var(--lime); border-color: var(--lime); }
-.kit-restart:focus-visible { outline: 2px solid var(--lime); outline-offset: 2px; }
+.kit-demo.ad--auto { pointer-events: none; user-select: none; }
 .kit-demo { flex: 1; min-height: 0; overflow: hidden; --ad-mono: var(--mono); font-family: inherit; }
 .kit-demo .ad-phases { padding: 0 16px 10px; }
 .kit-demo .ad-chat { padding: 16px; gap: 14px; }

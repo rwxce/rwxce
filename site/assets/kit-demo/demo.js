@@ -5,7 +5,13 @@
  *
  *   ArkDemo.mount(element, { avatar: 'assets/logo.svg', terminal: false })
  *
- * The visitor answers every question. `terminal: true` gives the terminal look (`$` and `>`
+ * Copied from agentic-repo-kit (site/assets/demo.js) plus `autoplay` for this shelf:
+ *   ArkDemo.mount(el, { terminal: true, autoplay: { plan: [...], ask: 'Choosing…', done: '…' } })
+ * plays on its own: each question takes the plan's answer for that loop (else the recommended or
+ * pre-selected one), then the next loop starts. Decorative: not focusable, no pointer events.
+ * With reduced motion it plays one fast pass and stops.
+ *
+ * Without autoplay the visitor answers every question. `terminal: true` gives the terminal look (`$` and `>`
  * prefixes, short labels) used on dark surfaces. Reduced motion skips the typing effects.
  * Playback pauses while the element is off screen.
  */
@@ -51,8 +57,12 @@
     this.root = root
     this.opts = opts || {}
     this.term = !!this.opts.terminal
+    this.auto = this.opts.autoplay || null
+    this.loop = 0
     this.speed = 1
-    try { if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) this.speed = 0.05 } catch (e) {}
+    this.reduced = false
+    try { this.reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches } catch (e) {}
+    if (this.reduced) this.speed = 0.05
     this.timers = []
     this.held = []
     this.paused = true
@@ -63,6 +73,7 @@
 
   Demo.prototype.build = function () {
     this.root.classList.add('ad')
+    if (this.auto) { this.root.classList.add('ad--auto'); this.root.setAttribute('aria-hidden', 'true') }
     this.root.innerHTML = ''
     this.phasesEl = el('ol', 'ad-phases')
     this.phasesEl.setAttribute('aria-label', 'Phases')
@@ -162,6 +173,7 @@
   }
 
   Demo.prototype.hint = function () {
+    if (this.auto) return this.done ? this.auto.done : (this.ask ? this.auto.ask : this.ui.hintWorking)
     if (this.done) return this.ui.hintDone
     if (this.ask) return this.ask.setup ? this.ui.hintSetup : this.ui.hintAsk
     return this.ui.hintWorking
@@ -390,6 +402,7 @@
       c.appendChild(txt)
       if (o.rec) c.appendChild(el('span', 'ad-rec', self.term ? self.ui.recShort : self.ui.recommended))
       c._id = o.id
+      if (self.auto) c.tabIndex = -1
       c.addEventListener('click', function () {
         if (q.multi) { if (self.sel[o.id]) delete self.sel[o.id]; else self.sel[o.id] = true; self.paintChoices() }
         else self.answer(q, [o.id], o.label)
@@ -400,6 +413,7 @@
       var row = el('div', 'ad-go-row')
       var goBtn = el('button', 'ad-go', this.ui.continue)
       goBtn.type = 'button'
+      if (self.auto) goBtn.tabIndex = -1
       goBtn.addEventListener('click', function () { self.confirmMulti() })
       row.appendChild(goBtn)
       box.appendChild(row)
@@ -410,6 +424,29 @@
     this.paintChoices()
     this.setComposer('')
     this.scroll()
+    if (this.auto) this.later(function () { self.autoAnswer(q) }, q.id === 'repo' ? 900 : 1700)
+  }
+
+  Demo.prototype.autoAnswer = function (q) {
+    var self = this
+    var plan = this.auto.plan || []
+    var pick = (plan[this.loop % Math.max(1, plan.length)] || {})[q.id]
+    if (!pick) {
+      pick = q.multi
+        ? q.options.filter(function (o) { return o.sel }).map(function (o) { return o.id })
+        : [(q.options.filter(function (o) { return o.rec })[0] || q.options[0]).id]
+    }
+    var buttons = this.askEl.querySelectorAll('.ad-choice')
+    if (q.multi) {
+      this.sel = {}
+      pick.forEach(function (id) { self.sel[id] = true })
+      this.paintChoices()
+      this.later(function () { self.confirmMulti() }, 700)
+      return
+    }
+    Array.prototype.forEach.call(buttons, function (c) { c.classList.toggle('is-selected', c._id === pick[0]) })
+    var o = q.options.filter(function (x) { return x.id === pick[0] })[0]
+    this.later(function () { self.answer(q, [o.id], o.label) }, 500)
   }
 
   Demo.prototype.paintChoices = function () {
@@ -447,6 +484,10 @@
     var self = this
     this.done = true
     this.setComposer('')
+    if (this.auto) {
+      if (!this.reduced) this.later(function () { self.loop += 1; self.restart() }, 3200)
+      return
+    }
     var wrap = el('div', 'ad-msg ad-replay-row')
     var btn = el('button', 'ad-ghost')
     btn.type = 'button'
@@ -459,6 +500,7 @@
   }
 
   Demo.prototype.restart = function () {
+    if (this.auto && !this.done) this.loop = 0
     this.done = false
     this.paused = false
     this.reset()
