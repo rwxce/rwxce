@@ -4,13 +4,13 @@ on:
   pull_request:
     paths:
       - "site/**"
-      - "scripts/check-plate-heights.mjs"
+      - "ci/check-plate-heights.mjs"
       - ".github/workflows/plate-heights.yml"
   push:
     branches: [main]
     paths:
       - "site/**"
-      - "scripts/check-plate-heights.mjs"
+      - "ci/check-plate-heights.mjs"
       - ".github/workflows/plate-heights.yml"
 
 permissions:
@@ -28,4 +28,4 @@ jobs:
           npm install --no-save --ignore-scripts playwright@1.65.1
           npx playwright install --with-deps chromium
       - name: Every plate is as tall as Zliding's
-        run: node scripts/check-plate-heights.mjs
+        run: node ci/check-plate-heights.mjs
