@@ -31,6 +31,7 @@
 <link rel="preload" href="assets/fonts/SpaceGrotesk-700.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/JetBrainsMono-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/vendor/lenis.css">
+<link rel="stylesheet" href="assets/kit-demo/demo.css">
 <link rel="stylesheet" href="assets/site.css">
 <script>document.documentElement.classList.add('js')</script>
 </head>
@@ -79,24 +80,22 @@
 </label>
 </div>
 
-<div class="lift" data-keywords="001 agentic-repo-kit agentic repo kit claude code skill agents hooks ci ai repo-bootstrap github  /repo-bootstrap 11 artifact families quick + audit modes AI skill">
+<div class="lift" data-keywords="001 agentic-repo-kit agentic repo kit claude code skill agents hooks ci ai repo-bootstrap github production idea research validation system design infra audit demo /repo-bootstrap new or existing repo idea research 11 families + 10 modules AI skill">
 <article class="plate plate-kit" aria-labelledby="p1">
 <div class="plate-body">
 <div class="plate-meta"><span class="plate-num">001</span><span class="plate-kind">AI skill</span></div>
 <h3 id="p1">agentic-<br>repo-kit</h3>
-<p class="plate-desc">Sets up any repo for AI agents: skills, hooks, CI and guardrails. It asks first, backs every proposal with evidence and builds nothing until you say go.</p>
-<ul class="tags"><li>/repo-bootstrap</li><li>11 artifact families</li><li>quick + audit modes</li></ul>
+<p class="plate-desc">Takes a new or existing repo to production with AI agents. It checks the idea with real data, designs the system by risk, turns every decision into a check and audits the infrastructure. Nothing is built until you say go.</p>
+<ul class="tags"><li>/repo-bootstrap</li><li>new or existing repo</li><li>10 modules</li></ul>
 <div class="actions">
 <a class="cta" href="https://rwxce.github.io/agentic-repo-kit/" target="_blank" rel="noopener" aria-label="Open agentic-repo-kit">Open project <svg aria-hidden="true" width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14 14 4M6 4h8v8"/></svg></a>
 <a class="src" href="https://github.com/rwxce/agentic-repo-kit" aria-label="agentic-repo-kit source on GitHub">Source on GitHub</a>
 </div>
 </div>
-<div class="term-col" aria-hidden="true">
-<div class="term-tilt"><div class="term">
-<div class="term-dots"><span></span><span></span><span></span></div>
-<div><span class="p">$</span> /repo-bootstrap</div>
-<div class="o"><span class="p">&gt;</span> scan the repo, ask what you want</div><div class="o"><span class="p">&gt;</span> propose, with file:line evidence</div><div class="o"><span class="p">&gt;</span> wait for your go</div><div class="o"><span class="p">&gt;</span> generate PRs, then verify</div>
-<div><span class="p">$</span> <span class="cursor blink"></span></div>
+<div class="term-col kit-art">
+<div class="term-tilt kit-tilt"><div class="kit-window">
+<div class="kit-bar"><div class="term-dots" aria-hidden="true"><span></span><span></span><span></span></div><span class="kit-bar-label">live demo · example data</span><button type="button" class="kit-restart" data-demo-restart="kit-demo" aria-label="Restart demo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg></button></div>
+<div id="kit-demo" class="ad ad--dark kit-demo"></div>
 </div></div>
 </div>
 </article>
@@ -226,6 +225,9 @@
 <script src="assets/site.js"></script>
 <script src="assets/vendor/lenis.min.js"></script>
 <script src="assets/smooth-scroll.js"></script>
+<script src="assets/kit-demo/en.js"></script>
+<script src="assets/kit-demo/demo.js"></script>
+<script>window.ArkDemo.mount(document.getElementById("kit-demo"),{terminal:true})</script>
 <script src="assets/vendor/nodi-live.js" defer></script>
 </body>
 </html>
