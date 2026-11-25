@@ -171,7 +171,7 @@ img, svg { display: block; }
 .sun { animation: sun 6s ease-in-out infinite; }
 .photo-lines { display: flex; flex-direction: column; gap: 6px; padding-inline: 2px; }
 .photo-lines .bar { height: 7px; border-radius: 4px; }
-.fl-person { left: 4%; top: 49%; width: 56%; animation-delay: -1s; }
+.fl-person { left: 4%; top: 49%; width: max(56%, 190px); animation-delay: -1s; }
 .fl-person > div { rotate: -2deg; }
 .fl-person .card, .fl-person .drop { border-radius: 22px; }
 .fl-person .card { padding: 14px 18px; }

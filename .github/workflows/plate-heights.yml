@@ -1,0 +1,31 @@
+name: Plate heights
+
+on:
+  pull_request:
+    paths:
+      - "site/**"
+      - "scripts/check-plate-heights.mjs"
+      - ".github/workflows/plate-heights.yml"
+  push:
+    branches: [main]
+    paths:
+      - "site/**"
+      - "scripts/check-plate-heights.mjs"
+      - ".github/workflows/plate-heights.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Install Playwright and Chromium
+        run: |
+          npm install --no-save --ignore-scripts playwright@1.65.1
+          npx playwright install --with-deps chromium
+      - name: Every plate is as tall as Zliding's
+        run: node scripts/check-plate-heights.mjs
