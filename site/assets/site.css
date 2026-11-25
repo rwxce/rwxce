@@ -171,6 +171,15 @@ img, svg { display: block; }
 .sun { animation: sun 6s ease-in-out infinite; }
 .photo-lines { display: flex; flex-direction: column; gap: 6px; padding-inline: 2px; }
 .photo-lines .bar { height: 7px; border-radius: 4px; }
+.fl-person { left: 4%; top: 49%; width: 56%; animation-delay: -1s; }
+.fl-person > div { rotate: -2deg; }
+.fl-person .card, .fl-person .drop { border-radius: 22px; }
+.fl-person .card { padding: 14px 18px; }
+.person-row { display: flex; align-items: center; gap: 14px; }
+.avatar { display: flex; align-items: center; justify-content: center; flex: none; width: 48px; height: 48px; border-radius: 50%; background: #FFD166; overflow: hidden; }
+.person-lines { display: flex; flex-direction: column; gap: 9px; flex: 1; min-width: 0; }
+.person-lines .bar { height: 9px; }
+.heart { flex: none; }
 .fl-voice { left: 8%; bottom: 3%; width: 76%; animation-delay: -4s; }
 .fl-voice > div { rotate: 2deg; }
 .fl-voice .card, .fl-voice .drop { border-radius: 36px; }
