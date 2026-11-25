@@ -311,29 +311,25 @@ img, svg { display: block; }
 
 /* shared */
 .ms-blink { animation: ms-blink 4.4s infinite; }
-.ms-c-env .ms-blink { transform-origin: 80px 119px; }
+.ms-c-nodi .ms-blink { transform-origin: 80px 104px; }
 .ms-c-bot .ms-blink { transform-origin: 80px 56px; animation-delay: -1.3s; }
 .ms-c-fox .ms-blink { transform-origin: 80px 62px; animation-delay: -2.4s; }
 .ms-c-ghost .ms-blink { transform-origin: 80px 72px; animation-delay: -3.1s; }
 @keyframes ms-blink { 0%, 93%, 100% { transform: scaleY(1); } 96% { transform: scaleY(.1); } }
 
-/* envelope: bobs, opens its flap, a letter with a heart rises, then it waves */
-.ms-env { animation: ms-env-bob 6s ease-in-out infinite; }
-.ms-env-sh { animation: ms-env-sh 6s ease-in-out infinite; }
-.ms-flap-f { transform-origin: 80px 64px; animation: ms-flap-f 6s ease-in-out infinite; }
-.ms-flap-b { transform-origin: 80px 64px; transform: scaleY(0); animation: ms-flap-b 6s ease-in-out infinite; }
-.ms-letter { animation: ms-letter 6s cubic-bezier(.3, 1.4, .5, 1) infinite; }
-.ms-heart { transform-origin: 80px 92px; animation: ms-heart 6s ease-in-out infinite; }
-.ms-env-arm-r { transform-origin: 128px 106px; animation: ms-arm-wave 6s ease-in-out infinite; }
-.ms-env-arm-l { transform-origin: 32px 106px; animation: ms-arm-l 6s ease-in-out infinite; }
-@keyframes ms-env-bob { 0%, 100% { transform: translateY(0); } 15% { transform: translateY(-4px); } 30% { transform: translateY(0); } 88% { transform: translateY(-3px); } }
-@keyframes ms-env-sh { 0%, 100% { transform: scaleX(1); } 15% { transform: scaleX(.9); } 30% { transform: scaleX(1); } }
-@keyframes ms-flap-f { 0%, 26% { transform: scaleY(1); } 33%, 77% { transform: scaleY(0); } 84%, 100% { transform: scaleY(1); } }
-@keyframes ms-flap-b { 0%, 33% { transform: scaleY(0); } 40%, 70% { transform: scaleY(-1); } 77%, 100% { transform: scaleY(0); } }
-@keyframes ms-letter { 0%, 38% { transform: translateY(0); } 48%, 62% { transform: translateY(-38px); } 72%, 100% { transform: translateY(0); } }
-@keyframes ms-heart { 0%, 48% { transform: scale(1); } 52% { transform: scale(1.25); } 56% { transform: scale(.95); } 60%, 100% { transform: scale(1); } }
-@keyframes ms-arm-wave { 0%, 82%, 100% { transform: rotate(0); } 86%, 94% { transform: rotate(-40deg); } 90%, 98% { transform: rotate(-15deg); } }
-@keyframes ms-arm-l { 0%, 40%, 70%, 100% { transform: rotate(0); } 48%, 62% { transform: rotate(25deg); } }
+/* nodi: bobs, the right handle waves with its knob trailing, then a half turn with squash */
+.ms-nodi { transform-origin: 80px 140px; animation: ms-nodi-bob 6s ease-in-out infinite; }
+.ms-nodi-sh { animation: ms-nodi-sh 6s ease-in-out infinite; }
+.ms-nodi-turn { transform-origin: 80px 108px; animation: ms-nodi-turn 6s ease-in-out infinite; }
+.ms-nodi-hr { transform-origin: 80px 108px; animation: ms-nodi-wave 6s ease-in-out infinite; }
+.ms-nodi-knob { transform-origin: 120px 70px; animation: ms-nodi-follow 6s ease-in-out -.25s infinite; }
+.ms-nodi-hl { transform-origin: 80px 108px; animation: ms-nodi-sway 6s ease-in-out infinite; }
+@keyframes ms-nodi-bob { 0%, 100% { transform: translateY(0); } 10% { transform: translateY(-4px); } 20% { transform: translateY(0); } 56% { transform: translateY(2px) scale(1.04, .95); } 62% { transform: translateY(-3px); } 72%, 90% { transform: translateY(0) scale(1); } }
+@keyframes ms-nodi-sh { 0%, 100% { transform: scaleX(1); } 10% { transform: scaleX(.9); } 20% { transform: scaleX(1); } 62% { transform: scaleX(.88); } 72% { transform: scaleX(1); } }
+@keyframes ms-nodi-wave { 0%, 22%, 52%, 100% { transform: rotate(0); } 28%, 40% { transform: rotate(-22deg); } 34%, 46% { transform: rotate(8deg); } }
+@keyframes ms-nodi-follow { 0%, 22%, 52%, 100% { transform: rotate(0); } 28%, 40% { transform: rotate(-26deg); } 34%, 46% { transform: rotate(18deg); } }
+@keyframes ms-nodi-turn { 0%, 54%, 90%, 100% { transform: rotate(0); } 62% { transform: rotate(-12deg); } 74% { transform: rotate(12deg); } 84% { transform: rotate(-3deg); } }
+@keyframes ms-nodi-sway { 0%, 54%, 100% { transform: rotate(0); } 64% { transform: rotate(10deg); } 76% { transform: rotate(-8deg); } 88% { transform: rotate(0); } }
 
 /* robot: visor scans, the arm waves from shoulder and elbow, then a hop */
 .ms-bot { animation: ms-bot-hop 5s ease-in-out infinite; }
