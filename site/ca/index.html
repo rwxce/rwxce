@@ -31,6 +31,7 @@
 <link rel="preload" href="../assets/fonts/SpaceGrotesk-700.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../assets/fonts/JetBrainsMono-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../assets/vendor/lenis.css">
+<link rel="stylesheet" href="../assets/kit-demo/demo.css">
 <link rel="stylesheet" href="../assets/site.css">
 <script>document.documentElement.classList.add('js')</script>
 </head>
@@ -79,24 +80,22 @@
 </label>
 </div>
 
-<div class="lift" data-keywords="001 agentic-repo-kit agentic repo kit claude code skill agents hooks ci ai repo-bootstrap github habilitat skill d&#x27;ia intel·ligencia artificial agents repositori eina kit families artefactes modes codi /repo-bootstrap 11 famílies d&#x27;artefactes modes quick + audit Skill d&#x27;IA">
+<div class="lift" data-keywords="001 agentic-repo-kit agentic repo kit claude code skill agents hooks ci ai repo-bootstrap github habilitat skill d&#x27;ia intel·ligencia artificial agents repositori producció recerca idea validació disseny del sistema auditoria infraestructura demo /repo-bootstrap repo nou o existent recerca de la idea 11 famílies + 10 mòduls Skill d&#x27;IA">
 <article class="plate plate-kit" aria-labelledby="p1">
 <div class="plate-body">
 <div class="plate-meta"><span class="plate-num">001</span><span class="plate-kind">Skill d&#x27;IA</span></div>
 <h3 id="p1">agentic-<br>repo-kit</h3>
-<p class="plate-desc">Prepara qualsevol repo per treballar amb agents d&#x27;IA: skills, hooks, CI i salvaguardes. Primer pregunta, avala cada proposta amb proves i no genera res fins que dones el vistiplau.</p>
-<ul class="tags"><li>/repo-bootstrap</li><li>11 famílies d&#x27;artefactes</li><li>modes quick + audit</li></ul>
+<p class="plate-desc">Porta un repo nou o existent a producció amb agents d&#x27;IA. Comprova la idea amb dades reals, dissenya segons el risc, converteix cada decisió en una comprovació i audita la infra. Res es construeix sense el teu vistiplau.</p>
+<ul class="tags"><li>/repo-bootstrap</li><li>repo nou o existent</li><li>10 mòduls</li></ul>
 <div class="actions">
 <a class="cta" href="https://rwxce.github.io/agentic-repo-kit/ca/" target="_blank" rel="noopener" aria-label="Obre agentic-repo-kit">Obre el projecte <svg aria-hidden="true" width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14 14 4M6 4h8v8"/></svg></a>
 <a class="src" href="https://github.com/rwxce/agentic-repo-kit" aria-label="Codi d&#x27;agentic-repo-kit a GitHub">Codi a GitHub</a>
 </div>
 </div>
-<div class="term-col" aria-hidden="true">
-<div class="term-tilt"><div class="term">
-<div class="term-dots"><span></span><span></span><span></span></div>
-<div><span class="p">$</span> /repo-bootstrap</div>
-<div class="o"><span class="p">&gt;</span> analitza el repo, pregunta què vols</div><div class="o"><span class="p">&gt;</span> proposa, amb proves file:line</div><div class="o"><span class="p">&gt;</span> espera el teu vistiplau</div><div class="o"><span class="p">&gt;</span> genera PRs i verifica</div>
-<div><span class="p">$</span> <span class="cursor blink"></span></div>
+<div class="term-col kit-art">
+<div class="term-tilt kit-tilt"><div class="kit-window">
+<div class="kit-bar"><div class="term-dots" aria-hidden="true"><span></span><span></span><span></span></div><span class="kit-bar-label">demo en directe · dades d&#x27;exemple</span><button type="button" class="kit-restart" data-demo-restart="kit-demo" aria-label="Reinicia la demo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg></button></div>
+<div id="kit-demo" class="ad ad--dark kit-demo"></div>
 </div></div>
 </div>
 </article>
@@ -226,6 +225,9 @@
 <script src="../assets/site.js"></script>
 <script src="../assets/vendor/lenis.min.js"></script>
 <script src="../assets/smooth-scroll.js"></script>
+<script src="../assets/kit-demo/ca.js"></script>
+<script src="../assets/kit-demo/demo.js"></script>
+<script>window.ArkDemo.mount(document.getElementById("kit-demo"),{terminal:true})</script>
 <script src="../assets/vendor/nodi-live.js" defer></script>
 </body>
 </html>
