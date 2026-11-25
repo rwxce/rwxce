@@ -317,19 +317,16 @@ img, svg { display: block; }
 .ms-c-ghost .ms-blink { transform-origin: 80px 72px; animation-delay: -3.1s; }
 @keyframes ms-blink { 0%, 93%, 100% { transform: scaleY(1); } 96% { transform: scaleY(.1); } }
 
-/* nodi: bobs, the right handle waves with its knob trailing, then a half turn with squash */
+/* nodi: bobs, then the right handle waves hello with its knob trailing; the face stays put */
 .ms-nodi { transform-origin: 80px 140px; animation: ms-nodi-bob 6s ease-in-out infinite; }
 .ms-nodi-sh { animation: ms-nodi-sh 6s ease-in-out infinite; }
-.ms-nodi-turn { transform-origin: 80px 108px; animation: ms-nodi-turn 6s ease-in-out infinite; }
+.ms-nodi-turn { transform-origin: 80px 108px; transform: rotate(-6deg); }
 .ms-nodi-hr { transform-origin: 80px 108px; animation: ms-nodi-wave 6s ease-in-out infinite; }
-.ms-nodi-knob { transform-origin: 120px 70px; animation: ms-nodi-follow 6s ease-in-out -.25s infinite; }
-.ms-nodi-hl { transform-origin: 80px 108px; animation: ms-nodi-sway 6s ease-in-out infinite; }
-@keyframes ms-nodi-bob { 0%, 100% { transform: translateY(0); } 10% { transform: translateY(-4px); } 20% { transform: translateY(0); } 56% { transform: translateY(2px) scale(1.04, .95); } 62% { transform: translateY(-3px); } 72%, 90% { transform: translateY(0) scale(1); } }
-@keyframes ms-nodi-sh { 0%, 100% { transform: scaleX(1); } 10% { transform: scaleX(.9); } 20% { transform: scaleX(1); } 62% { transform: scaleX(.88); } 72% { transform: scaleX(1); } }
-@keyframes ms-nodi-wave { 0%, 22%, 52%, 100% { transform: rotate(0); } 28%, 40% { transform: rotate(-22deg); } 34%, 46% { transform: rotate(8deg); } }
-@keyframes ms-nodi-follow { 0%, 22%, 52%, 100% { transform: rotate(0); } 28%, 40% { transform: rotate(-26deg); } 34%, 46% { transform: rotate(18deg); } }
-@keyframes ms-nodi-turn { 0%, 54%, 90%, 100% { transform: rotate(0); } 62% { transform: rotate(-12deg); } 74% { transform: rotate(12deg); } 84% { transform: rotate(-3deg); } }
-@keyframes ms-nodi-sway { 0%, 54%, 100% { transform: rotate(0); } 64% { transform: rotate(10deg); } 76% { transform: rotate(-8deg); } 88% { transform: rotate(0); } }
+.ms-nodi-knob { transform-origin: 120px 70px; animation: ms-nodi-follow 6s ease-in-out -.2s infinite; }
+@keyframes ms-nodi-bob { 0%, 100% { transform: translateY(0); } 12% { transform: translateY(-4px); } 24% { transform: translateY(0); } 70% { transform: translateY(-3px); } 82% { transform: translateY(0); } }
+@keyframes ms-nodi-sh { 0%, 100% { transform: scaleX(1); } 12% { transform: scaleX(.9); } 24% { transform: scaleX(1); } 70% { transform: scaleX(.92); } 82% { transform: scaleX(1); } }
+@keyframes ms-nodi-wave { 0%, 18%, 72%, 100% { transform: rotate(0); } 26% { transform: rotate(-14deg); } 32% { transform: rotate(16deg); } 38% { transform: rotate(-14deg); } 44% { transform: rotate(16deg); } 50% { transform: rotate(-14deg); } 56% { transform: rotate(14deg); } 64% { transform: rotate(-4deg); } }
+@keyframes ms-nodi-follow { 0%, 18%, 72%, 100% { transform: rotate(0); } 26% { transform: rotate(-20deg); } 32% { transform: rotate(22deg); } 38% { transform: rotate(-20deg); } 44% { transform: rotate(22deg); } 50% { transform: rotate(-20deg); } 56% { transform: rotate(18deg); } 64% { transform: rotate(-5deg); } }
 
 /* robot: visor scans, the arm waves from shoulder and elbow, then a hop */
 .ms-bot { animation: ms-bot-hop 5s ease-in-out infinite; }
