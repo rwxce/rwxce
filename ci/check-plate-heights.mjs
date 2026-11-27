@@ -1,4 +1,4 @@
-// Plate height rule (see CLAUDE.md): from 1280px every plate is as tall as Zliding's (±2px), in en, es and ca.
+// Plate height rule (see CLAUDE.md): from 1280px every project card is as tall as Zliding's (±2px), in en, es and ca.
 // Usage: node ci/check-plate-heights.mjs  (needs `playwright` resolvable; serves site/ itself)
 import { createServer } from "node:http";
 import { readFile } from "node:fs/promises";
@@ -23,13 +23,20 @@ const server = createServer(async (req, res) => {
 const base = `http://localhost:${server.address().port}`;
 
 const browser = await chromium.launch();
-const page = await browser.newPage();
+// Reduced motion: no entrance animation to wait for.
+const page = await browser.newPage({ reducedMotion: "reduce" });
 const failures = [];
 for (const lang of ["", "es/", "ca/"]) {
   for (const width of [1280, 1440]) {
     await page.setViewportSize({ width, height: 900 });
     await page.goto(`${base}/${lang}`, { waitUntil: "load" });
-    const heights = await page.$$eval(".plate:not(.plate-next)", (els) => els.map((e) => e.getBoundingClientRect().height));
+    const keys = await page.$$eval("[data-open]", (els) => els.map((e) => e.dataset.open));
+    const heights = [];
+    for (const key of keys) {
+      await page.click(`[data-open="${key}"]`);
+      heights.push(await page.locator(`[data-card="${key}"]`).evaluate((e) => e.getBoundingClientRect().height));
+      await page.click("[data-close]");
+    }
     const spread = Math.max(...heights) - Math.min(...heights);
     console.log(`/${lang} @${width}: ${heights.map(Math.round).join(", ")} (spread ${spread.toFixed(1)})`);
     if (heights.length < 4 || spread > 2) failures.push(`/${lang} @${width}`);
