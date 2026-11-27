@@ -136,41 +136,6 @@ img, svg { display: block; }
 .src { display: inline-flex; align-items: center; min-height: 52px; padding-inline: 20px; font-family: var(--mono); font-size: 14px; text-decoration: none; }
 .src:hover { text-decoration: underline; }
 
-/* agentic-repo-kit */
-.plate-kit { background: var(--ink); color: #f2f3ee; }
-.plate-kit .plate-num { background: var(--lime); color: var(--ink); }
-.plate-kit .plate-kind { color: #b9bcc6; }
-.plate-kit .plate-desc { color: #d9dbe1; }
-.plate-kit .tags li { border-color: #5b5f6b; }
-.plate-kit .cta { background: var(--lime); color: var(--ink); }
-.plate-kit .src { color: #f2f3ee; }
-.term-col { display: flex; flex-direction: column; justify-content: center; min-width: 0; }
-.term-tilt { transform: rotate(1.5deg); }
-.term-dots { display: flex; gap: 8px; }
-.term-dots span { width: 11px; height: 11px; border-radius: 50%; background: #5b5f6b; }
-.term-dots span:last-child { background: var(--lime); }
-/* agentic-repo-kit: the interactive /repo-bootstrap demo (assets/kit-demo/) in a dark terminal window. */
-.kit-art { height: 560px; }
-.kit-tilt { flex: 1; min-height: 0; display: flex; }
-.kit-window { flex: 1; min-width: 0; min-height: 0; display: flex; flex-direction: column; border: 1px solid #474b57; border-radius: 20px; background: #2a2d36; box-shadow: 0 30px 60px -30px rgba(0, 0, 0, .6); overflow: hidden; }
-.kit-bar { display: flex; align-items: center; gap: 12px; padding: 12px 14px 8px 16px; }
-.kit-bar-label { flex: 1; min-width: 0; font-family: var(--mono); font-size: 12px; color: #c4c7cf; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.kit-demo.ad--auto { pointer-events: none; user-select: none; }
-.kit-demo { flex: 1; min-height: 0; overflow: hidden; --ad-mono: var(--mono); font-family: inherit; }
-.kit-demo .ad-phases { padding: 0 16px 10px; }
-.kit-demo .ad-chat { padding: 16px; gap: 14px; }
-.kit-demo .ad-say { font-size: 14.5px; line-height: 1.5; }
-.kit-demo .ad-user-text { font-size: 13px; font-family: var(--mono); font-weight: 500; max-width: 85%; padding: 8px 12px; border-radius: 14px 14px 4px 14px; }
-.kit-demo .ad-line { font-size: 11.5px; gap: 7px; }
-.kit-demo .ad-tag { min-width: 76px; }
-.kit-demo .ad-kicker { font-size: 10.5px; }
-.kit-demo .ad-choice { min-height: 50px; padding: 9px 12px; }
-.kit-demo .ad-choice-label { font-size: 14.5px; }
-.kit-demo .ad-choice-sub { font-size: 12.5px; }
-.kit-demo .ad-foot { padding: 10px 12px; background: transparent; }
-.kit-demo .ad-composer { background: #22252d; }
-@media (max-width: 600px) { .kit-art { height: 540px; } .kit-tilt { transform: none; } }
-
 /* Memory Archive */
 .plate-mem { background: #cdd2ff; color: #14153a; }
 .plate-mem .plate-num { background: #14153a; color: #fff; }
@@ -443,10 +408,8 @@ html:not(.js) .sheet { display: flex; flex-direction: column; position: static; 
    so previous / next never makes the sheet jump. From 1280px the text columns fit inside the square art height;
    below that cards keep their natural height. */
 @media (min-width: 1280px) {
-  .plate-kit, .plate-mem, .plate-ms { align-items: center; padding: clamp(28px, 4.4vw, 64px); }
-  .term-col, .mem-art, .ms-art { width: 100%; max-width: 600px; aspect-ratio: 1; justify-self: center; }
-  .kit-art { height: auto; min-height: 0; }
-  .kit-art .kit-tilt, .kit-art .kit-window { min-height: 0; overflow: hidden; }
+  .plate-mem, .plate-ms { align-items: center; padding: clamp(28px, 4.4vw, 64px); }
+  .mem-art, .ms-art { width: 100%; max-width: 600px; aspect-ratio: 1; justify-self: center; }
   .mem-art { min-height: 0; }
   .ms-art { display: flex; }
   .ms-stage { flex: 1; }
