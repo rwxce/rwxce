@@ -39,7 +39,6 @@
   var count = sheet.querySelector('.sheet-count')
   var current = 0
   var opener = null
-  var demoMounted = false
 
   function wrap(i) { return (i + cards.length) % cards.length }
   function pad(n) { return ('00' + n).slice(-3) }
@@ -61,11 +60,6 @@
     }
     sheet.scrollTop = 0
     history.replaceState(null, '', '#' + keys[current])
-    // The demo needs a visible box, so it mounts the first time its card is shown.
-    if (!demoMounted && keys[current] === 'agentic-repo-kit' && window.mountKitDemo) {
-      demoMounted = true
-      window.mountKitDemo()
-    }
   }
 
   all('[data-open]').forEach(function (tile) {

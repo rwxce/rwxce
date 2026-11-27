@@ -39,7 +39,7 @@ for (const lang of ["", "es/", "ca/"]) {
     }
     const spread = Math.max(...heights) - Math.min(...heights);
     console.log(`/${lang} @${width}: ${heights.map(Math.round).join(", ")} (spread ${spread.toFixed(1)})`);
-    if (heights.length < 4 || spread > 2) failures.push(`/${lang} @${width}`);
+    if (heights.length < 3 || spread > 2) failures.push(`/${lang} @${width}`);
   }
 }
 await browser.close();

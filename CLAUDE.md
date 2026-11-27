@@ -7,7 +7,7 @@ Static shelf site in `site/` (en at the root, `es/`, `ca/`), deployed by `pages.
 The shelf is a grid of app-style icons; clicking one opens its card (the plate) in a modal with previous / next.
 
 - A new project adds, in en, es and ca: one `.tile` (`data-open`, `data-keywords`, icon) in `#apps` and one `article.plate` (`data-card`, `data-name`, same key) in `#sheet`, in the same order, with the next number. Move the "under construction" slot and the hero counter up by one.
-- Current numbers: 001 Zliding, 002 mascot-studio, 003 agentic-repo-kit, 004 Memory Archive.
+- Current numbers: 001 Zliding, 002 mascot-studio, 003 Memory Archive.
 
 ## Plate height rule
 
